@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS\style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>Agen Travel Website</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav_logo">
+                LOGO
+            </a>
+            
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">Home</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#our_package" class="nav_link">Our Package</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#call_us" class="nav_link">Call Us</a>
+                    </li>
+                </ul>
+
+                <div class="nav_button">
+                    <a href="#" class="nav_button_link">Login</a>
+                    <a href="#" class="nav_button_ghost">Get Started</a>
+                </div>
+
+                <!-- Close button -->
+                <div class="nav_close" id="nav_close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- toogle menu -->
+            <div class="nav_toogle" id="nav_toogle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home">
+            <div class="home_container container">
+                <div class="home_content">
+                    <div class="home_data">
+                        <h1 class="home_title">Your Trusted Travel Agent's</h1>
+                        <p class="home_description">Your Happines is our happines</p>
+
+                        <a href="#" class="home_button">Explore Locations</a>
+                    </div>
+
+                    <img src="assets\plane.svg" alt="plane" class="plane">
+                </div>
+
+                <div class="home_images">
+                    <img src="assets/sun.png" alt="sun" class="home_images-1">
+                    <img src="assets\mountain.png" alt="mountain" class="home_images-2">
+                </div>
+            </div>
+        </section>
+
+        <section class="our_package" id="our_package">
+
+            <h1>Our Package</h1>
+
+            <div class="package_container">
+
+                <div class="package_slide">
+
+
+                    <div class="item_package" style="background-image: url(assets/bali.jpg);">
+                        <div class="package_content">
+                            <div class="package_name">Bali</div>
+                            <div class="package_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quisquam mollitia veritatis, exercitationem aut nostrum, consectetur commodi, deserunt minus recusandae sequi eius.</div>
+                            <button>see more</button>
+                        </div>
+                    </div>
+
+                    <div class="item_package" style="background-image: url(assets/Japan.jpg);">
+                        <div class="package_content">
+                            <div class="package_name">Japan</div>
+                            <div class="package_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quisquam mollitia veritatis, exercitationem aut nostrum, consectetur commodi, deserunt minus recusandae sequi eius.</div>
+                            <button>see more</button>
+                        </div>
+                    </div>
+
+                    <div class="item_package" style="background-image: url(assets/south-korea.jpg);">
+                        <div class="package_content">
+                            <div class="package_name">South Korea</div>
+                            <div class="package_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quisquam mollitia veritatis, exercitationem aut nostrum, consectetur commodi, deserunt minus recusandae sequi eius.</div>
+                            <button>see more</button>
+                        </div>
+                    </div>
+
+                    <div class="item_package" style="background-image: url(assets/singapore.jpg);">
+                        <div class="package_content">
+                            <div class="package_name">Singapore</div>
+                            <div class="package_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quisquam mollitia veritatis, exercitationem aut nostrum, consectetur commodi, deserunt minus recusandae sequi eius.</div>
+                            <button>see more</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="button">
+                    <button class="prev"><i class="ri-arrow-left-line"></i></i></button>
+                    <button class="next"><i class="ri-arrow-right-line"></i></button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="call_us" id="call_us">
+            <div class="container_call">
+                <div class="image_container">
+                        <img src="/assets/image-form.jpg" alt="form-image">
+                        <p class="image_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magni animi perferendis exercitationem!</p>
+                </div>
+            
+                <form class="form_call" name="message-form" onsubmit="return validateForm()">
+                    <div class="form_name">
+                        <h1>Call us</h1>
+                    </div>
+                    <label for="full-name">Nama</label><br>
+                    <input placeholder="Nama" type="text" name="full-name" />
+                    <br>
+                    <label for="birth-date">Tanggal Lahir</label><br>
+                    <input type="date" name="birth-date" />
+                    <br>
+                    <label for="gender"> jenis Kelamin</label><br>
+                    <select id="gender" name="gender">
+                        <option value="male">laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+                    <br>
+                    <label for="massages">Pesan</label><br>
+                    <textarea placeholder="Pesan" name="messages"></textarea>
+                    <br>
+                    <input class="button_form" type="submit" value="Submit" />
+                </form>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+    <script src="JS\script.js"></script>
+</body>
+</html>
